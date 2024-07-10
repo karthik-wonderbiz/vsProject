@@ -1,0 +1,43 @@
+@FirstApp_HostAddress = http://localhost:5041
+
+GET {{FirstApp_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
+
+GET {{FirstApp_HostAddress}}/api/customer
+
+###
+
+POST {{FirstApp_HostAddress}}/api/customer
+Content-Type: application/json
+
+{
+  "Name" : "Karthik",
+  "Email" : "karthik@",
+  "IsActive" : true,
+  "GenderId" : 1
+}
+
+###
+
+GET {{FirstApp_HostAddress}}/api/customer/2
+
+###
+
+DELETE {{FirstApp_HostAddress}}/api/customer/2
+
+###
+
+PUT {{FirstApp_HostAddress}}/api/customer/0
+Content-Type: application/json
+
+{
+  //Customer
+}
+
+###
+
+GET {{FirstApp_HostAddress}}/api/customer
+
+###
