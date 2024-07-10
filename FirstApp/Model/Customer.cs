@@ -22,7 +22,7 @@ namespace FirstApp.Model
 
         public bool IsActive { get; set; } = false;
 
-        public Gender Gender { get; set; }
+        public Gender? Gender { get; set; }
 
         [ForeignKey("Gender")]
         public int GenderId { get; set; }

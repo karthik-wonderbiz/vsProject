@@ -14,14 +14,14 @@ Content-Type: application/json
 
 {
   "Name" : "Karthik",
-  "Email" : "karthik@",
+  "Email" : "karthik@12",
   "IsActive" : true,
   "GenderId" : 1
 }
 
 ###
 
-GET {{FirstApp_HostAddress}}/api/customer/2
+GET {{FirstApp_HostAddress}}/api/customer/3
 
 ###
 
@@ -29,13 +29,16 @@ DELETE {{FirstApp_HostAddress}}/api/customer/2
 
 ###
 
-PUT {{FirstApp_HostAddress}}/api/customer/0
+PUT {{FirstApp_HostAddress}}/api/customer/3
 Content-Type: application/json
 
 {
-  //Customer
+    "Id": 3,
+    "Name": "Karthik",
+    "Email": "karthik",
+    "IsActive": true,
+    "GenderId" : 1
 }
-
 ###
 
 GET {{FirstApp_HostAddress}}/api/customer
